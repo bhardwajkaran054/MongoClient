@@ -23,6 +23,9 @@ The main purpose of this article is to demonstrate some basic CRUD (Create Read 
 
 ---
 
+>Document Author: [Karan Bhardwaj](karanbhardwaj.me), Document reference from [Christian Hissibini](https://github.com/histechup/guestlist-manager-cli-csharp/blob/master/README.md)
+
+
 ## Why MongoDB?
 
 * **Dynamic schema**: MongoDB gives flexibility to change data schema without modifying any of existing data. It's perfect for this ongoing project.
