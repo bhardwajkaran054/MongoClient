@@ -1,5 +1,5 @@
 # MongoClient
-**A console app written in C# that use as a MongoDB Client**
+**A console app written in C# that use as a MongoDB Client (GUI Application will be available soon...)**
 
 ![MongoClient](/MongoClientApplicationImages/MongoClient.jpg)
 
