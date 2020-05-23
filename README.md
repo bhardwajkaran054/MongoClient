@@ -49,8 +49,6 @@ The complete project is available on Github here. Feel free to fork it and clone
 1. Name the project "**MongoDBClientApplication**"
 1. Click **Create** to create the project
 
-![alt text](https://cdn-images.gif)
-
 ## Other Requirements
 C# Dependencies
 1. **MongoDB.Driver** - for working with MongoDB
@@ -67,8 +65,6 @@ To install the driver, we'll go through NuGet Package Manager and install the pa
 1. Type: "**MongoDB.Driver**" on Browse tab
 1. Tick all of your **Project** and Select Driver version (2.10.4 or Latest) 
 1. Hit **Install** button
-
-![alt text](https://cdn-images.gif)
 
 #### 2.MongoDB.Bson
 It allow to perform CRUD operation on database using C#, this driver already install along with MongoDB.Drive; To make sure it install or not, enter "**MongoDB.Bson**" on Browse tab.
@@ -88,6 +84,7 @@ This project require four class with name
 4. **Display.cs** - Almost all the input and output operations perform by this class
 
 ---
+
 ### Adding Mongo Class
 
 This class is a collection of methods for dealing with MongoDB connection and CRUD
@@ -137,7 +134,6 @@ Class use only MongoDB.Driver as a declarative.
 This class interact with MongoDB and return Database, here one constructor is use that takes connection string as an input.
 
 ---
-
 
 ### Adding Crud class
 
@@ -373,6 +369,32 @@ I designed this methods in such a way that it takes pair of inputs, if inputs ar
 ---
 
 ### Adding Display Class
+
+#### Connection String input
+
+![alt text](/MongoClientApplicationImages/ConnectionString.gif)
+
+#### Database and Connection List
+
+![alt text](/MongoClientApplicationImages/DBList.gif)
+
+#### Insert Operation
+
+![alt text](/MongoClientApplicationImages/Insert.gif)
+
+#### Read Operation
+
+![alt text](/MongoClientApplicationImages/ReadAll.gif)
+
+#### Update Operation
+
+![alt text](/MongoClientApplicationImages/Update.gif)
+
+#### Delete Operation
+
+![alt text](/MongoClientApplicationImages/Delete.gif)
+
+#### Create Display.cs Class
 
 This class is responsible for pretty data in our console app
 1. Click **Project** -> **Add Class**
