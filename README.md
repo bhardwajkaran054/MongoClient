@@ -13,13 +13,6 @@
 * Takes less system space
 * It work on both local or cloud database
 
-### Limitation
-* You can perform only one Document at a time like InsertOne(), UpdateOne() and DeleteOne()
-* It takes only simple JSON file.
-* Update operation on Array and Object not possible
-* Insert Operation require JSON format
-* Connection string only accept localhost connection string or MongoDB Campass connection string otherwise it show error.
-
 The main purpose of this article is to demonstrate some basic CRUD (Create Read Update Delete) operations without MongoDB Query.
 
 ---
@@ -806,6 +799,15 @@ Press **ctrl + F5** to build and run the project
 ## Wrapping up
 
 Now, we have a fully functional **MongoDB Client Application** console app. We can create, read, update and delete documents in a MongoDB database.
+
+---
+
+### Limitation
+* You can perform only one Document at a time like InsertOne(), UpdateOne() and DeleteOne()
+* It takes only simple JSON file.
+* Update operation on Array and Object not possible
+* Insert Operation require JSON format
+* Connection string only accept localhost connection string or MongoDB Campass connection string otherwise it show error.
 
 ---
 
