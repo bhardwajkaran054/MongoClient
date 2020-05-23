@@ -1,7 +1,7 @@
 # MongoClient
 **A console app written in C# that use as a MongoDB Client**
 
-![alt text](/MongoDBProjectImages/)
+![MongoClient](/MongoClientApplicationImages/MongoClient.jpg)
 
 ### Features and Advantages over MongoDB Shell
 * Easy to implement
@@ -19,7 +19,7 @@ The main purpose of this article is to demonstrate some basic CRUD (Create Read 
 
 ## Context
 
-![alt text](/MongoClientApplicationImages/Main.gif)
+![Application Preview](/MongoClientApplicationImages/Main.gif)
 
 ---
 
@@ -72,11 +72,6 @@ It allow to perform CRUD operation on database using C#, this driver already ins
 #### 3.Newtonsoft.Json
 This dependencie use for conversion of bson documents to json and also use for extraction of data with only pair of field name and its value. 
 Follow the same process as above and search **Newtonsoft.Json** and install on your project.
-
----
-
-## Download Project
-If you don't want to code then **Clone** this repository and open **MongoDBClientApplication.sln**, use *Visual Studio 2019* and don't forget to install *Dependencies (MongoDB.Driver, Newtonsoft.Json)*.
 
 ---
 
@@ -377,27 +372,27 @@ I designed this methods in such a way that it takes pair of inputs, if inputs ar
 
 #### Connection String input
 
-![alt text](/MongoClientApplicationImages/ConnectionString.gif)
+![Connection String](/MongoClientApplicationImages/ConnectionString.gif)
 
 #### Database and Connection List
 
-![alt text](/MongoClientApplicationImages/DBList.gif)
+![DBList](/MongoClientApplicationImages/DBList.gif)
 
 #### Insert Operation
 
-![alt text](/MongoClientApplicationImages/Insert.gif)
+![Insert](/MongoClientApplicationImages/Insert.gif)
 
 #### Read Operation
 
-![alt text](/MongoClientApplicationImages/ReadAll.gif)
+![Read](/MongoClientApplicationImages/ReadAll.gif)
 
 #### Update Operation
 
-![alt text](/MongoClientApplicationImages/Update.gif)
+![Update](/MongoClientApplicationImages/Update.gif)
 
 #### Delete Operation
 
-![alt text](/MongoClientApplicationImages/Delete.gif)
+![Delete](/MongoClientApplicationImages/Delete.gif)
 
 #### Create Display.cs Class
 
@@ -811,6 +806,11 @@ namespace MongoDBClientApplication
 }
 
 ```
+
+---
+
+## Download Project
+If you don't want to code then **Clone** this repository and open **MongoDBClientApplication.sln**, use *Visual Studio 2019* and don't forget to install *Dependencies (MongoDB.Driver, Newtonsoft.Json)*.
 
 ---
 
