@@ -36,6 +36,7 @@ The main purpose of this article is to demonstrate some basic CRUD (Create Read 
 
 ## Getting our workspace ready
 The complete project is available on Github here. Feel free to fork it and clone it for your own use!. In order to follow along, you will need a MongoDB database. You can use a MongoDB database running locally, or easily create a free database using MongoDB Atlas.
+**make sure you have internet connection when you are using "MongoDB Compass connection string"**
 * Install Visual Studio andÂ .NET Framework (Visual Studio 2019)
 * Install MongoDB locally or Create a free database using MongoDB Atlas
 
@@ -789,9 +790,7 @@ namespace MongoDBClientApplication
 
 Press **ctrl + F5** to build and run the project
 
->Even if you don't have any existing connection string **mongodb+srv://m001-student:m001-mongodb-basics@cluster0-jxeqq.mongodb.net/test**.
-
-[**Here is the git repository link for the complete project.**](https://github.com/bhardwajkaran054/MongoClient)
+>Even if you don't have any existing connection string: **mongodb+srv://m001-student:m001-mongodb-basics@cluster0-jxeqq.mongodb.net/test**
 
 
 ---
@@ -805,7 +804,7 @@ Now, we have a fully functional **MongoDB Client Application** console app. We c
 ## Resources
 
 * [Thanks to MongoDB University to provide the  resources and teach how to use mongodb]
-* [MongoDB Blog Quick Start C# and MongoDB] (https://www.mongodb.com/blog/post/quick-start-c-sharp-and-mongodb-starting-and-setup)]
+* [MongoDB Blog Quick Start C# and MongoDB](https://www.mongodb.com/blog/post/quick-start-c-sharp-and-mongodb-starting-and-setup)]
 * [What is MongoDBâ€Š-â€Šfrom the official source](https://www.mongodb.com/what-is-mongodb)
 * [Learn more about MongoDB C#/.NET Driver](https://docs.mongodb.com/ecosystem/drivers/csharp/)
 * [Learn more about MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
