@@ -19,7 +19,7 @@ The main purpose of this article is to demonstrate some basic CRUD (Create Read 
 
 ## Context
 
-![alt text](/MongoDBProjectImages/Main.gif)
+![alt text](/MongoClientApplicationImages/Main.gif)
 
 ---
 
