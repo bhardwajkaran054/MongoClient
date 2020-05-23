@@ -43,49 +43,49 @@ The complete project is available on Github here. Feel free to fork it and clone
 ---
 
 ## Creating and running our console application
-1. Launch Visual Studio
-1. Click Create a new project
-1. In the Create a new project dialog, click C# Console App (.NET Framework or .NET Core)
-1. Name the project "MongoDBClientApplication"
-1. Click Create to create the project
+1. Launch **Visual Studio**
+1. Click **Create a new project**
+1. In the Create a new project dialog, click **C# Console App** (.NET Framework or .NET Core)
+1. Name the project "**MongoDBClientApplication**"
+1. Click **Create** to create the project
 
 ![alt text](https://cdn-images.gif)
 
 ## Other Requirements
 C# Dependencies
-* MongoDB.Driver - for working with MongoDB
-* MongoDB.Bson - to perform CRUD operation
-* Newtonsoft.Json - for conversion Bson file to Json file or get only pair of field name and value
+1. **MongoDB.Driver** - for working with MongoDB
+1. **MongoDB.Bson** - to perform CRUD operation
+1. **Newtonsoft.Json** - for conversion Bson file to Json file or get only pair of field name and value
 
 ### Adding MongoDB C#/.NET Driver dependencies to our project**
 
-#### MongoDB.Driver
+#### 1.MongoDB.Driver
 What will allow us to work with the data in any MongoDB database from C# is a package called MongoDB C#/.NET Driver which creates a native interface between our application and a MongoDB server.
 
 To install the driver, we'll go through NuGet Package Manager and install the package.
 1. Open the **Package Manager Console** in Visual Studio with "Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution..."
 1. Type: "**MongoDB.Driver**" on Browse tab
-1. Tick all of your Project and Select Driver version (2.10.4 or Latest) 
-1. Hit Install button
+1. Tick all of your **Project** and Select Driver version (2.10.4 or Latest) 
+1. Hit **Install** button
 
 ![alt text](https://cdn-images.gif)
 
-#### MongoDB.Bson
+#### 2.MongoDB.Bson
 It allow to perform CRUD operation on database using C#, this driver already install along with MongoDB.Drive; To make sure it install or not, enter "**MongoDB.Bson**" on Browse tab.
 
 #### Newtonsoft.Json
 This dependencie use for conversion of bson documents to json and also use for extraction of data with only pair of field name and its value. 
-Follow the same process and search **Newtonsoft.Json** and install on your project.
+Follow the same process as above and search **Newtonsoft.Json** and install on your project.
 
 ---
 
 ## Application Structure
 
 This project require four class with name
-1. Program.cs - wiring up everything and call different methods
-2. Mongo.cs - main connection string class that interact with MongoDB database
-3. Crud.cs - perform all CRUD and conversion operation by using Mongo Class
-4. Display.cs - Almost all the input and output operations perform by this class
+1. **Program.cs** - wiring up everything and call different methods
+2. **Mongo.cs** - main connection string class that interact with MongoDB database
+3. **Crud.cs** - perform all CRUD and conversion operation by using Mongo Class
+4. **Display.cs** - Almost all the input and output operations perform by this class
 
 ---
 ### Adding Mongo Class
@@ -134,7 +134,7 @@ namespace MongoDBClientApplication
 
 ```
 Class use only MongoDB.Driver as a declarative.
-This class interact with MongoDB and return Database, here one constructor is use that takes connection string as an input, whenever this class use it require connection string;
+This class interact with MongoDB and return Database, here one constructor is use that takes connection string as an input.
 
 ---
 
@@ -359,13 +359,14 @@ namespace MongoDBClientApplication
 }
 ```
 Here, BsonDoc(), JsonDoc(), TextDoc() and Find() method is use for read document from MongoDB
-* BsonDoc() return default BSON file by using MongoDB.Bson and MongoDB.Bson.IO, 
-* JsonDoc() return json file by using Newtonsoft.Json,
-* TextDoc() return pair of Field name and values using Newtonsoft.Json
-* Find() call one of the above method as user require.
+* **BsonDoc()** return default BSON file by using MongoDB.Bson and MongoDB.Bson.IO, 
+* **JsonDoc()** return json file by using Newtonsoft.Json,
+* **TextDoc()** return pair of Field name and values using Newtonsoft.Json
+* **Find()** call one of the above method as user require.
+
 I designed this methods in such a way that it takes pair of inputs, if inputs are '*' then by default it return all documents otherwise it return filtered data and it able to identify which input value is string or integer.
 
-* InsertOneAsync() method is use to insert data, it uses MongoDB.Bson to serialize data and it able to get input as JSON code or by importing JSON file.
+* **InsertOneAsync()** method is use to insert data, it uses MongoDB.Bson to serialize data and it able to get input as JSON code or by importing JSON file.
 * UpdateOne() and DeleteOne() method are use for update or delete data using MongoDB.Bson
 * InsertOne(), UpdateOne() and DeleteOne() methods are able to identify which input value is string or which value is integer.
 
@@ -673,8 +674,8 @@ namespace MongoDBClientApplication
 
 ```
 In this class, most of the methods print menu driven options, here two methods are different 
-1. JsonImporter() - take json file directory as an input and convert the json file to string and return, and 
-1. FilterConnectionString() - filter the input string and check it whether it is local string or MongoDB Compass connection string, and then filter the string and convert it into C# connection string
+1. **JsonImporter()** - take json file directory as an input and convert the json file to string and return, and 
+1. **FilterConnectionString()** - filter the input string and check it whether it is local string or MongoDB Compass connection string, and then filter the string and convert it into C# connection string
 
 ---
 
