@@ -1,5 +1,5 @@
 # MongoClient
-**A console app written in C# that use as a MongoDB Client (GUI Application will be available soon...)**
+**A console app written in C# that use as a MongoDB Client (GUI Application will be available soon)**
 
 ![MongoClient](/MongoClientApplicationImages/MongoClient.jpg)
 
@@ -23,7 +23,7 @@ The main purpose of this article is to demonstrate some basic CRUD (Create Read 
 
 ---
 
->Author: [Karan Bhardwaj](karanbhardwaj.me), Document reference from Christian Hissibini
+>Author: [Karan Bhardwaj](karanbhardwaj.me), Document reference from [Christian Hissibini](https://github.com/histechup)
 
 
 ## Why MongoDB?
