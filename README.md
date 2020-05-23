@@ -8,7 +8,7 @@
 * Do not require specific knowledge of MongoDb Query(only Create operation requires JSON knowledge) 
 * Display all database and collection list
 * Read document as JSON, BSON, or only pair of Field name and Value
-* Read, Update and Delete can be perform by readable text
+* Read, Update and Delete can be perform by only Field name and its Value
 * For Insertion you can Import document(Create Operation)
 * Takes less system space
 * It work on both local or cloud database
