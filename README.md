@@ -829,13 +829,13 @@ Now, we have a fully functional **MongoDB Client Application** console app. We c
 * It takes only simple JSON file.
 * Update operation on Array and Object not possible
 * Insert Operation require JSON format
-* Connection string only accept localhost connection string or MongoDB Campass connection string otherwise it show error.
+* Connection string input accept only localhost connection string or MongoDB Campass connection string otherwise it show error.
 
 ---
 
 ## Resources
 
-* Thanks to MongoDB University to provide the  resources and teach how to use mongodb
+* [Thanks to MongoDB University to provide the  resources and teach how to use mongodb](http://university.mongodb.com/course_completion/7bd68e9f-0168-42d6-a728-32e4623a245e)
 * [MongoDB Blog Quick Start C# and MongoDB](https://www.mongodb.com/blog/post/quick-start-c-sharp-and-mongodb-starting-and-setup)
 * [What is MongoDB from the official source](https://www.mongodb.com/what-is-mongodb)
 * [Learn more about MongoDB C#/.NET Driver](https://docs.mongodb.com/ecosystem/drivers/csharp/)
