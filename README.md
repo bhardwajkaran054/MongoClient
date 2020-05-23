@@ -73,7 +73,7 @@ To install the driver, we'll go through NuGet Package Manager and install the pa
 #### 2.MongoDB.Bson
 It allow to perform CRUD operation on database using C#, this driver already install along with MongoDB.Drive; To make sure it install or not, enter "**MongoDB.Bson**" on Browse tab.
 
-#### Newtonsoft.Json
+#### 3.Newtonsoft.Json
 This dependencie use for conversion of bson documents to json and also use for extraction of data with only pair of field name and its value. 
 Follow the same process as above and search **Newtonsoft.Json** and install on your project.
 
@@ -675,7 +675,7 @@ namespace MongoDBClientApplication
 ```
 In this class, most of the methods print menu driven options, here two methods are different 
 1. **JsonImporter()** - take json file directory as an input and convert the json file to string and return, and 
-1. **FilterConnectionString()** - filter the input string and check it whether it is local string or MongoDB Compass connection string, and then filter the string and convert it into C# connection string
+1. **FilterConnectionString()** - filter the input string and check it whether it is localhost connection string or MongoDB Compass connection string, and then filter the string and convert it into C# connection string
 
 ---
 
@@ -805,8 +805,8 @@ Now, we have a fully functional **MongoDB Client Application** console app. We c
 ## Resources
 
 * Thanks to MongoDB University to provide the  resources and teach how to use mongodb
-* [MongoDB Blog Quick Start C# and MongoDB](https://www.mongodb.com/blog/post/quick-start-c-sharp-and-mongodb-starting-and-setup)]
-* [What is MongoDBâ€Š-â€Šfrom the official source](https://www.mongodb.com/what-is-mongodb)
+* [MongoDB Blog Quick Start C# and MongoDB](https://www.mongodb.com/blog/post/quick-start-c-sharp-and-mongodb-starting-and-setup)
+* [What is MongoDB from the official source](https://www.mongodb.com/what-is-mongodb)
 * [Learn more about MongoDB C#/.NET Driver](https://docs.mongodb.com/ecosystem/drivers/csharp/)
 * [Learn more about MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 * Udemy Tutorial from Basic to Advance By Mosh
