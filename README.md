@@ -824,4 +824,4 @@ Now, we have a fully functional **MongoDB Client Application** console app. We c
 
 ## Feedback
 
-Thanks for reading! I hope this helped you. Please feel free to leave a comment here or create an issue in the Github repo.
+Thanks for reading! I hope this helped you, If any help require contact me at bhardwajkaran054@gmail.com. Please feel free to leave a comment here or create an issue in the Github repo.
