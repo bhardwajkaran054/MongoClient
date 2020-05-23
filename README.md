@@ -5,19 +5,19 @@
 
 ### Features and Advantages over MongoDB Shell
 * Easy to implement
-* Do not require specific knowledge of MongoDb Query for implementation of CRUD operation (only Create operation requires JSON knowledge) 
-* Display all database and collection list on single screen
+* Do not require specific knowledge of MongoDb Query(only Create operation requires JSON knowledge) 
+* Display all database and collection list
 * Read document as JSON, BSON, or only pair of Field name and Value
-* For Read, Update and Delete can be perform by readable text
-* You can Import document for Insertion (Create Operation)
+* Read, Update and Delete can be perform by readable text
+* For Insertion you can Import document(Create Operation)
 * Takes less system space
 * It work on both local or cloud database
 
-The main purpose of this article is to demonstrate some basic CRUD (Create Read Update Delete) operations without MongoDB Query in a MongoDB database with C#.
+The main purpose of this article is to demonstrate some basic CRUD (Create Read Update Delete) operations without MongoDB Query.
 
 ---
 
-## ContextÂ 
+## Context
 
 ![alt text](https://cdn-images.gif)
 
@@ -36,8 +36,8 @@ The main purpose of this article is to demonstrate some basic CRUD (Create Read 
 
 ## Getting our workspace ready
 The complete project is available on Github here. Feel free to fork it and clone it for your own use!. In order to follow along, you will need a MongoDB database. You can use a MongoDB database running locally, or easily create a free database using MongoDB Atlas.
-**make sure you have internet connection when you are using "MongoDB Compass connection string"**
-* Install Visual Studio andÂ .NET Framework (Visual Studio 2019)
+**make sure you have internet connection when you are using "MongoDB Compass connection string"**.
+* Install Visual Studio and .NET Framework (Visual Studio 2019)
 * Install MongoDB locally or Create a free database using MongoDB Atlas
 
 ---
@@ -65,27 +65,27 @@ What will allow us to work with the data in any MongoDB database from C# is a pa
 To install the driver, we'll go through NuGet Package Manager and install the package.
 1. Open the **Package Manager Console** in Visual Studio with "Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution..."
 1. Type: "**MongoDB.Driver**" on Browse tab
-1. Tick all of your Project and Select Driver version (2.10.4) 
+1. Tick all of your Project and Select Driver version (2.10.4 or Latest) 
 1. Hit Install button
-It take few second to install
 
 ![alt text](https://cdn-images.gif)
 
 #### MongoDB.Bson
-It allow to perform CRUD operation on database using C#, this driver don't  need to install because it already install along with MongoDB.Drive but to make sure enter "**MongoDB.Bson**" on Browse tab and intall it if its not. 
+It allow to perform CRUD operation on database using C#, this driver already install along with MongoDB.Drive; To make sure it install or not, enter "**MongoDB.Bson**" on Browse tab.
 
 #### Newtonsoft.Json
-This dependencie use for conversion of bson documents to json and also use for extraction of data with only pair of field name and its value.
-Follow the same process and search "**Newtonsoft.Json**" and install on your project.
+This dependencie use for conversion of bson documents to json and also use for extraction of data with only pair of field name and its value. 
+Follow the same process and search **Newtonsoft.Json** and install on your project.
+
 ---
 
 ## Application Structure
 
 This project require four class with name
-1. Program - wiring up everything and call different methods
-2. Mongo - main connection string class that interact with MongoDB database
-3. Crud - perform all CRUD and conversion operation by using Mongo Class
-4. Display - Almost all the input and output operations perform by this class
+1. Program.cs - wiring up everything and call different methods
+2. Mongo.cs - main connection string class that interact with MongoDB database
+3. Crud.cs - perform all CRUD and conversion operation by using Mongo Class
+4. Display.cs - Almost all the input and output operations perform by this class
 
 ---
 ### Adding Mongo Class
@@ -360,14 +360,14 @@ namespace MongoDBClientApplication
 ```
 Here, BsonDoc(), JsonDoc(), TextDoc() and Find() method is use for read document from MongoDB
 * BsonDoc() return default BSON file by using MongoDB.Bson and MongoDB.Bson.IO, 
-* JsonDoc() return converted file to json by using Newtonsoft.Json,
-* TextDoc() return converted file to pair of Field name and values using Newtonsoft.Json
-* Find() method simply call one of the above method as user require.
-I designed this methods in such a way that it takes pair of inputs if inputs are '*' then by default it return all documents otherwise it return filtered data and it able to identify which input is string or integer value.
+* JsonDoc() return json file by using Newtonsoft.Json,
+* TextDoc() return pair of Field name and values using Newtonsoft.Json
+* Find() call one of the above method as user require.
+I designed this methods in such a way that it takes pair of inputs, if inputs are '*' then by default it return all documents otherwise it return filtered data and it able to identify which input value is string or integer.
 
 * InsertOneAsync() method is use to insert data, it uses MongoDB.Bson to serialize data and it able to get input as JSON code or by importing JSON file.
-* UpdateOne() and DeleteOne() method update of delete data using MongoDB.Bson
-* InsertOne(), UpdateOne() and DeleteOne() able to identify which input value is string or integer, if string then treat as a string or if integer treat as a integer
+* UpdateOne() and DeleteOne() method are use for update or delete data using MongoDB.Bson
+* InsertOne(), UpdateOne() and DeleteOne() methods are able to identify which input value is string or which value is integer.
 
 ---
 
@@ -377,7 +377,7 @@ This class is responsible for pretty data in our console app
 1. Click **Project** -> **Add Class**
 1. Type "**Display.cs**" in the name field
 1. Click **Add** to add the new class to the project
-Copy and paste the following code into the Display.cs file and save.
+Copy and paste the following code into the **Display.cs** file and save.
 
 ```csharp
 //Ref: https://github.com/histechup/guestlist-manager-cli-csharp/blob/master/guestlist-manager-cli-csharp/DialogHelper.cs
@@ -672,9 +672,9 @@ namespace MongoDBClientApplication
 }
 
 ```
-In this class, most of the methods is use to print menu driven options, here two method are different 
+In this class, most of the methods print menu driven options, here two methods are different 
 1. JsonImporter() - take json file directory as an input and convert the json file to string and return, and 
-1. FilterConnectionString() - filter this input string and check whether it is local string or MongoDB Compass connection string, and then filtered the string and convert it for C# connection string
+1. FilterConnectionString() - filter the input string and check it whether it is local string or MongoDB Compass connection string, and then filter the string and convert it into C# connection string
 
 ---
 
@@ -790,7 +790,7 @@ namespace MongoDBClientApplication
 
 Press **ctrl + F5** to build and run the project
 
->Even if you don't have any existing connection string: **mongodb+srv://m001-student:m001-mongodb-basics@cluster0-jxeqq.mongodb.net/test**
+>Even if you don't have any existing connection string use ``` mongodb+srv://m001-student:m001-mongodb-basics@cluster0-jxeqq.mongodb.net/test ```
 
 
 ---
@@ -803,12 +803,12 @@ Now, we have a fully functional **MongoDB Client Application** console app. We c
 
 ## Resources
 
-* [Thanks to MongoDB University to provide the  resources and teach how to use mongodb]
+* Thanks to MongoDB University to provide the  resources and teach how to use mongodb
 * [MongoDB Blog Quick Start C# and MongoDB](https://www.mongodb.com/blog/post/quick-start-c-sharp-and-mongodb-starting-and-setup)]
 * [What is MongoDBâ€Š-â€Šfrom the official source](https://www.mongodb.com/what-is-mongodb)
 * [Learn more about MongoDB C#/.NET Driver](https://docs.mongodb.com/ecosystem/drivers/csharp/)
 * [Learn more about MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-* [Udemy Tutorial from Basic to Advance By Mosh
+* Udemy Tutorial from Basic to Advance By Mosh
 
 ---
 
