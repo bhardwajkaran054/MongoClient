@@ -17,13 +17,13 @@ The main purpose of this article is to demonstrate some basic CRUD (Create Read 
 
 ---
 
-## Context
+## Application Preview
 
 ![Application Preview](/MongoClientApplicationImages/Main.gif)
 
 ---
 
->Document Author: [Karan Bhardwaj](karanbhardwaj.me), Document reference from [Christian Hissibini](https://github.com/histechup/guestlist-manager-cli-csharp/blob/master/README.md)
+>Author: [Karan Bhardwaj](karanbhardwaj.me), Document reference from Christian Hissibini
 
 
 ## Why MongoDB?
