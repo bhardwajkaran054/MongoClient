@@ -23,7 +23,7 @@ The main purpose of this article is to demonstrate some basic CRUD (Create Read 
 
 ---
 
->Author: [Karan Bhardwaj](karanbhardwaj.me), Document reference from [Christian Hissibini](https://github.com/histechup)
+
 
 
 ## Why MongoDB?
