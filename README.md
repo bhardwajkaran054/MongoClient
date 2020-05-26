@@ -146,6 +146,9 @@ This class is a collection of methods for dealing with MongoDB connection and CR
 3. Click **Add** to add the new class to the project
 Copy and paste the following code into the **Crud.cs** file and save.
 
+This class play a very important role in this project. as we know that its not simple to perform CRUD operation using C#, one of the obstacle is BSON file, so to make it simple i converted this BSON file to JSON [click here to see code](https://gist.github.com/bhardwajkaran054/d22cade8869ba325b372ba1ef323eb15). Now it get easier to perform any operation, Once you convert it you can easily extract only pair of Field and its values like {"Tile": "Movies", "Rating": 5, ..."} -> Title: Movie, Rating: 5,... [click here to see code](https://gist.github.com/bhardwajkaran054/5577675495e928d3e0752459e888708c).
+I use one fuction that import JSON file for Insertion Operation [click here to see code](https://gist.github.com/bhardwajkaran054/0832746b634cd79432d6c582ce6cd6ba).
+
 ```csharp
 using MongoDB.Bson;
 using MongoDB.Bson.IO;
